@@ -19,13 +19,14 @@
 
 <dependencies>
     <!--Framework junit 5(Jupiter) para escrita e execuçao dos testes!-->
+
     <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit.jupiter</artifactId>
-        <version>5.11.4</version>
-        <!--O escopo test isola esta biblioteca apenas para  pasta src/test!-->
-        <scope>test</scope>
-    </dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter</artifactId>
+    <version>5.10.2</version>
+    <scope>test</scope>
+</dependency>
+    
 </dependencies>
 
     <build>

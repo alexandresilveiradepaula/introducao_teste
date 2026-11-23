@@ -2,14 +2,11 @@ package br.com.aula;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-
-import java.beans.Transient;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import main.java.br.com.aula.ContaBancaria;
+// import br.com.aula.ContaBancaria;
 
  class ContaBancariaTest {
 
@@ -53,16 +50,16 @@ import main.java.br.com.aula.ContaBancaria;
 
         // TESTE 3: Caminho Triste/Exceção()
         @Test
-        @DisplayName
+        @DisplayName("teste")
         void deveLancarExcecaoAoDepositarvalorInvalido(){
-            assertThrows(IllegalArgumentException.class,()->{
+            assertThrows(IllegalArgumentException.class, ()-> {
                 conta.depositar(-10.0);
             });
         }
 
         //TESTE 4: Caminho Triste / Exceção (Saldo Insuficiente)
         @Test
-        @DisplayName
+        @DisplayName("teste 2")
         void deveLancarExcecaoAoSacarValorMaiorQueSaldo(){
             assertThrows(IllegalArgumentException.class,()->{
                 conta.sacar(200.0);
